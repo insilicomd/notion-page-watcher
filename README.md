@@ -42,17 +42,12 @@ GW_PW=your_email_password
 ## 사용 방법
 
 ### 기본 실행
+`notion_page_watcher.ipynb` 파일 사용
 
-```python
-from notion_page_update import main
-
+````
 # 오늘 기준 어제 업데이트 검색 및 알림
 main(reciver_email_list=["recipient@example.com"])
-```
 
-### 특정 날짜 기준 실행
-
-```python
 # 2025년 12월 17일 기준으로 12월 16일 업데이트 검색
 main(reciver_email_list=["recipient@example.com"], now="20251217")
 ```
@@ -60,10 +55,10 @@ main(reciver_email_list=["recipient@example.com"], now="20251217")
 ### CLI 실행
 
 ```bash
-uv run python notion_page_update.py
+uv run python notion_page_watcher.py
 ```
 
-`notion_page_update.py` 하단의 `reciver_email_list`와 `now` 변수를 수정하여 실행합니다.
+`notion_page_watcher.py` 하단의 `reciver_email_list`와 `now` 변수를 수정하여 실행합니다.
 
 ## 주요 함수
 
